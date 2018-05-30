@@ -1,0 +1,14 @@
+{
+    "name": "ry-ad-server",
+    "alias": [
+        "ry-ad-server"
+    ],
+    "env": {
+        
+    },
+    "engines": {
+        "node": "^10"
+    },
+    "public": true,
+    "type": "npm"
+}

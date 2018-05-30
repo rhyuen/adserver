@@ -1,0 +1,33 @@
+{
+  "name": "adserver",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env PORT=9988 NODE_ENV=production nodemon index.js",
+    "dev": "cross-env PORT=9988 NODE_ENV=dev nodemon index.js",
+    "test": "mocha ./test/*.spec.js",
+    "deploy": "now --public && now alias"
+  },
+  "dependencies": {
+    "body-parser": "1.18.2",
+    "cookie-parser": "1.4.3",
+    "cors": "2.8.4",
+    "cross-env": "5.1.6",
+    "express": "4.16.2",
+    "mongoose": "4.13.0",
+    "morgan": "1.9.0",
+    "nconf": "0.9.1",
+    "node-fetch": "1.7.3",
+    "nodemon": "1.12.1",
+    "path": "0.12.7",
+    "serve-static": "1.13.2",
+    "winston": "2.4.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "chai-as-promised": "7.1.1",
+    "chai-http": "3.0.0",
+    "mocha": "4.0.1"
+  }
+}
