@@ -4,10 +4,11 @@
         "ry-ad-server"
     ],
     "env": {
-        
+        "PORT": 9988,
+        "MONGO": "@node-ad-mongo"
     },
     "engines": {
-        "node": "^10"
+        "node": "^8"
     },
     "public": true,
     "type": "npm"

@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "cross-env PORT=9988 NODE_ENV=production nodemon index.js",
-    "dev": "cross-env PORT=9988 NODE_ENV=dev nodemon index.js",
+    "start": "nodemon index.js",
+    "dev": "nodemon index.js",
     "test": "mocha ./test/*.spec.js",
     "deploy": "now --public && now alias"
   },
@@ -18,10 +18,10 @@
     "mongoose": "4.13.0",
     "morgan": "1.9.0",
     "nconf": "0.9.1",
-    "node-fetch": "1.7.3",
     "nodemon": "1.12.1",
     "path": "0.12.7",
     "serve-static": "1.13.2",
+    "uuid": "3.2.1",
     "winston": "2.4.0"
   },
   "devDependencies": {
